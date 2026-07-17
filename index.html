@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>magIA · IA aplicada con Machine Learning y Python</title>
+  <meta name="description" content="Repositorio ejecutivo de ejemplos de IA aplicada con Python, machine learning, bases CSV, notebooks y dashboards interactivos.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav"><div class="container nav-inner"><a class="logo" href="#top">mag<span>IA</span></a><div class="links"><a href="#casos">Casos</a><a href="#flujo">Flujo</a><a href="#ventas">Ventas</a><a href="#fx">Robot FX</a><a href="#recursos">Recursos</a></div></div></nav>
+  <main id="top">
+    <section class="hero"><div class="container"><div class="hero-card">
+      <div class="badge">Repositorio ejecutivo · Python · Machine Learning · Dashboards</div>
+      <h1>IA aplicada con Machine Learning y Python</h1>
+      <p class="lead">Repositorio magIA de ejemplos aplicados para construir soluciones analíticas: pronóstico financiero, forecast de demanda, restock de inventario y robot FX. Cada caso incluye notebook, base sintética, dashboard HTML y visualización ejecutiva.</p>
+      <div class="hero-actions"><a class="btn primary" href="#casos">Explorar casos</a><a class="btn" href="notebooks/01_agente_flujo_efectivo_DASHBOARD_AVANZADO.ipynb" download>Descargar notebook flujo</a><a class="btn" href="data/flujo_efectivo_sintetico.csv" download>Descargar CSV flujo</a></div>
+    </div></div></section>
+
+    <section class="section" id="casos"><div class="container"><div class="section-head"><h2>Banco de casos aplicados</h2><p class="lead">Tres prototipos para inspirar proyectos corporativos y académicos con datos, modelos predictivos, agentes y dashboards interactivos.</p></div><div class="grid">
+  <article class="card" style="--accent:#22d8ff">
+    <div class="case-icon">💰</div>
+    <span class="tag" style="color:#22d8ff;background:#22d8ff22">Finanzas corporativas</span>
+    <h3>Agente de flujo de efectivo</h3>
+    <p>Pronosticar el flujo neto mensual, anticipar riesgo de liquidez y generar recomendaciones ejecutivas mediante un agente IA.</p>
+    <div class="btn-row"><a class="btn" href="#flujo">Ver caso</a><a class="btn" href="dashboards/dashboard_flujo_efectivo_AVANZADO.html" target="_blank">Abrir dashboard</a></div>
+  </article>
+
+
+  <article class="card" style="--accent:#8b5cf6">
+    <div class="case-icon">📦</div>
+    <span class="tag" style="color:#8b5cf6;background:#8b5cf622">Ventas, logística e inventario</span>
+    <h3>Agente de ventas y restock</h3>
+    <p>Pronosticar demanda, estimar punto de reorden, stock de seguridad y cantidad sugerida de reabastecimiento.</p>
+    <div class="btn-row"><a class="btn" href="#ventas">Ver caso</a><a class="btn" href="dashboards/dashboard_ventas_restock_AVANZADO.html" target="_blank">Abrir dashboard</a></div>
+  </article>
+
+
+  <article class="card" style="--accent:#33e1a5">
+    <div class="case-icon">💱</div>
+    <span class="tag" style="color:#33e1a5;background:#33e1a522">Tesorería, mercados y riesgo</span>
+    <h3>Robot FX USD/MXN</h3>
+    <p>Construir una señal direccional para USD/MXN con probabilidad de alza a 7 días, usando API de mercado y base de respaldo.</p>
+    <div class="btn-row"><a class="btn" href="#fx">Ver caso</a><a class="btn" href="dashboards/dashboard_robot_fx_AVANZADO.html" target="_blank">Abrir dashboard</a></div>
+  </article>
+</div></div></section>
+
+    <section class="section"><div class="container">
+<section class="case" id="flujo" style="--accent:#22d8ff">
+  <div class="case-title">
+    <div>
+      <span class="tag" style="color:#22d8ff;background:#22d8ff22">Finanzas corporativas</span>
+      <h2>💰 Agente de flujo de efectivo</h2>
+      <p class="lead">Pronosticar el flujo neto mensual, anticipar riesgo de liquidez y generar recomendaciones ejecutivas mediante un agente IA.</p>
+    </div>
+    <a class="btn primary" href="dashboards/dashboard_flujo_efectivo_AVANZADO.html" target="_blank">Abrir dashboard en pantalla completa</a>
+  </div>
+  <div class="accent-line"></div>
+  <div class="kpis">
+    <div class="kpi"><strong>Modelo</strong><span>Random Forest Regressor</span></div>
+    <div class="kpi"><strong>Variable objetivo</strong><span>flujo_neto</span></div>
+    <div class="kpi"><strong>Horizonte</strong><span>6 meses</span></div>
+    <div class="kpi"><strong>Entregable</strong><span>Notebook + CSV + HTML</span></div>
+  </div>
+  <div class="dashboard-frame"><iframe src="dashboards/dashboard_flujo_efectivo_AVANZADO.html" loading="lazy" title="Agente de flujo de efectivo"></iframe></div>
+  <div class="resources">
+    <div class="res-card"><div><strong>Notebook</strong><small>Código Python listo para Colab</small></div><a href="notebooks/01_agente_flujo_efectivo_DASHBOARD_AVANZADO.ipynb" download>Descargar</a></div>
+    <div class="res-card"><div><strong>Base CSV</strong><small>Datos sintéticos de práctica</small></div><a href="data/flujo_efectivo_sintetico.csv" download>Descargar</a></div>
+    <div class="res-card"><div><strong>Dashboard</strong><small>HTML interactivo avanzado</small></div><a href="dashboards/dashboard_flujo_efectivo_AVANZADO.html" download>Descargar</a></div>
+  </div>
+</section>
+
+
+<section class="case" id="ventas" style="--accent:#8b5cf6">
+  <div class="case-title">
+    <div>
+      <span class="tag" style="color:#8b5cf6;background:#8b5cf622">Ventas, logística e inventario</span>
+      <h2>📦 Agente de ventas y restock</h2>
+      <p class="lead">Pronosticar demanda, estimar punto de reorden, stock de seguridad y cantidad sugerida de reabastecimiento.</p>
+    </div>
+    <a class="btn primary" href="dashboards/dashboard_ventas_restock_AVANZADO.html" target="_blank">Abrir dashboard en pantalla completa</a>
+  </div>
+  <div class="accent-line"></div>
+  <div class="kpis">
+    <div class="kpi"><strong>Modelo</strong><span>Random Forest Regressor</span></div>
+    <div class="kpi"><strong>Variable objetivo</strong><span>ventas_unidades</span></div>
+    <div class="kpi"><strong>Horizonte</strong><span>30 días</span></div>
+    <div class="kpi"><strong>Entregable</strong><span>Notebook + CSV + HTML</span></div>
+  </div>
+  <div class="dashboard-frame"><iframe src="dashboards/dashboard_ventas_restock_AVANZADO.html" loading="lazy" title="Agente de ventas y restock"></iframe></div>
+  <div class="resources">
+    <div class="res-card"><div><strong>Notebook</strong><small>Código Python listo para Colab</small></div><a href="notebooks/02_agente_ventas_restock_DASHBOARD_AVANZADO.ipynb" download>Descargar</a></div>
+    <div class="res-card"><div><strong>Base CSV</strong><small>Datos sintéticos de práctica</small></div><a href="data/ventas_inventario_sintetico.csv" download>Descargar</a></div>
+    <div class="res-card"><div><strong>Dashboard</strong><small>HTML interactivo avanzado</small></div><a href="dashboards/dashboard_ventas_restock_AVANZADO.html" download>Descargar</a></div>
+  </div>
+</section>
+
+
+<section class="case" id="fx" style="--accent:#33e1a5">
+  <div class="case-title">
+    <div>
+      <span class="tag" style="color:#33e1a5;background:#33e1a522">Tesorería, mercados y riesgo</span>
+      <h2>💱 Robot FX USD/MXN</h2>
+      <p class="lead">Construir una señal direccional para USD/MXN con probabilidad de alza a 7 días, usando API de mercado y base de respaldo.</p>
+    </div>
+    <a class="btn primary" href="dashboards/dashboard_robot_fx_AVANZADO.html" target="_blank">Abrir dashboard en pantalla completa</a>
+  </div>
+  <div class="accent-line"></div>
+  <div class="kpis">
+    <div class="kpi"><strong>Modelo</strong><span>Random Forest Classifier</span></div>
+    <div class="kpi"><strong>Variable objetivo</strong><span>sube_7d</span></div>
+    <div class="kpi"><strong>Horizonte</strong><span>7 días</span></div>
+    <div class="kpi"><strong>Entregable</strong><span>Notebook + CSV + HTML</span></div>
+  </div>
+  <div class="dashboard-frame"><iframe src="dashboards/dashboard_robot_fx_AVANZADO.html" loading="lazy" title="Robot FX USD/MXN"></iframe></div>
+  <div class="resources">
+    <div class="res-card"><div><strong>Notebook</strong><small>Código Python listo para Colab</small></div><a href="notebooks/03_robot_fx_usdmxn_DASHBOARD_AVANZADO.ipynb" download>Descargar</a></div>
+    <div class="res-card"><div><strong>Base CSV</strong><small>Datos sintéticos de práctica</small></div><a href="data/tipo_cambio_sintetico.csv" download>Descargar</a></div>
+    <div class="res-card"><div><strong>Dashboard</strong><small>HTML interactivo avanzado</small></div><a href="dashboards/dashboard_robot_fx_AVANZADO.html" download>Descargar</a></div>
+  </div>
+</section>
+</div></section>
+
+    <section class="section" id="recursos"><div class="container"><div class="case" style="--accent:#22d8ff"><h2>Recursos descargables</h2><p class="lead">Los archivos están incluidos dentro del sitio para que puedan abrirse o descargarse desde GitHub Pages.</p><div class="resources">
+      <div class="res-card"><div><strong>Notebooks</strong><small>Carpeta con ejercicios IPYNB</small></div><a href="notebooks/">Abrir</a></div>
+      <div class="res-card"><div><strong>Bases CSV</strong><small>Datos sintéticos para práctica</small></div><a href="data/">Abrir</a></div>
+      <div class="res-card"><div><strong>Dashboards</strong><small>HTML interactivos avanzados</small></div><a href="dashboards/">Abrir</a></div>
+    </div></div></div></section>
+  </main>
+  <footer class="footer"><div class="container">Diseñado para magIA · Ejemplos de IA aplicada con Machine Learning y Python</div></footer>
+</body>
+</html>
